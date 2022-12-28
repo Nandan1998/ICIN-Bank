@@ -6,11 +6,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserLoginComponent } from './Components/user-login/user-login.component';
+import { UserRegistrationComponent } from './Components/user-registration/user-registration.component';
+import { UserDashboardComponent } from './Components/user-dashboard/user-dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    UserRegistrationComponent,
+    UserDashboardComponent
   ],
   imports: [
     BrowserModule,

@@ -34,7 +34,7 @@ export class UserLoginComponent implements OnInit{
             user => {
               this.dataService.setUser(user);
               this.dataService.setIsSafe(true);
-              this.router.navigate(['bank/home']);
+              this.router.navigate(['user-dashboard']);
             }
           )
         } else if(message.message === 'failure') {

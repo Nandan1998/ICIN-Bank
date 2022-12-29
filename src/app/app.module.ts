@@ -1,3 +1,5 @@
+import { UserAccountsComponent } from './Components/user-accounts/user-accounts.component';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -8,20 +10,24 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserLoginComponent } from './Components/user-login/user-login.component';
 import { UserRegistrationComponent } from './Components/user-registration/user-registration.component';
 import { UserDashboardComponent } from './Components/user-dashboard/user-dashboard.component';
+import { UserProfileComponent } from './Components/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserLoginComponent,
     UserRegistrationComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    UserAccountsComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

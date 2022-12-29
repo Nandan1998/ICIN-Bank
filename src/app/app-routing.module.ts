@@ -1,3 +1,4 @@
+import { UserAccountsComponent } from './Components/user-accounts/user-accounts.component';
 import { UserDashboardComponent } from './Components/user-dashboard/user-dashboard.component';
 import { UserRegistrationComponent } from './Components/user-registration/user-registration.component';
 import { UserLoginComponent } from './Components/user-login/user-login.component';
@@ -7,7 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {path:'', component:UserLoginComponent},
   {path:'registration', component:UserRegistrationComponent},
-  {path:'user-dashboard', component:UserDashboardComponent}
+  {path:'user-dashboard', component:UserDashboardComponent},
+  {path:'user-accounts', component:UserAccountsComponent}
 ];
 
 @NgModule({

@@ -11,6 +11,9 @@ import { UserLoginComponent } from './Components/user-login/user-login.component
 import { UserRegistrationComponent } from './Components/user-registration/user-registration.component';
 import { UserDashboardComponent } from './Components/user-dashboard/user-dashboard.component';
 import { UserProfileComponent } from './Components/user-profile/user-profile.component';
+import { UserChequeBookComponent } from './Components/user-cheque-book/user-cheque-book.component';
+import { UserTransactionsComponent } from './Components/user-transactions/user-transactions.component';
+import { UserTransfersComponent } from './Components/user-transfers/user-transfers.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { UserProfileComponent } from './Components/user-profile/user-profile.com
     UserRegistrationComponent,
     UserDashboardComponent,
     UserAccountsComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    UserChequeBookComponent,
+    UserTransactionsComponent,
+    UserTransfersComponent
   ],
   imports: [
     BrowserModule,

@@ -89,13 +89,13 @@ export class UserTransactionsComponent implements OnInit{
     let type = this.generateType(fromAN, toAN);
     if (type === 'Debit') {
       this.amountColor = 'text-danger';
-      return `from:${fromAT}/to:${to}/mess:${message}`;
+      return `from:${fromAT} | to:${to} | message:${message}`;
     } else if (type === 'Credit') {
       this.amountColor = 'text-success';
-      return `from:${from}/to:${toAT}/mess:${message}`;
+      return `from:${from} | to:${toAT} | message:${message}`;
     }
     this.amountColor = '';
-    return `from:${fromAT}/to:${toAT}/self-transfer/mess:${message}`;
+    return `from:${fromAT} | to:${toAT} | self-transfer/message:${message}`;
   }
 
   generateTransferAmount(amount: number, from: string, to: string): string {

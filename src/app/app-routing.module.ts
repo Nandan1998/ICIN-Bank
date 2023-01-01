@@ -1,3 +1,8 @@
+import { AdminTransactComponent } from './Components/admin-transact/admin-transact.component';
+import { AdminChequeComponent } from './Components/admin-cheque/admin-cheque.component';
+import { AdminAccountManageComponent } from './Components/admin-account-manage/admin-account-manage.component';
+import { AdminDashboardComponent } from './Components/admin-dashboard/admin-dashboard.component';
+import { AdminLoginComponent } from './Components/admin-login/admin-login.component';
 import { UserTransfersComponent } from './Components/user-transfers/user-transfers.component';
 import { UserTransactionsComponent } from './Components/user-transactions/user-transactions.component';
 import { UserChequeBookComponent } from './Components/user-cheque-book/user-cheque-book.component';
@@ -17,7 +22,13 @@ const routes: Routes = [
   {path:'user-profile', component:UserProfileComponent},
   {path:'user-cheque', component:UserChequeBookComponent},
   {path:'user-passbook', component:UserTransactionsComponent},
-  {path:'user-transfer',component:UserTransfersComponent}
+  {path:'user-transfer',component:UserTransfersComponent},
+  {path:'admin',component:AdminLoginComponent},
+  {path:'admin-dashboard',component:AdminDashboardComponent},
+  {path:'admin-manage-accounts',component:AdminAccountManageComponent},
+  {path:'admin-cheque',component:AdminChequeComponent},
+  {path:'admin-transact', component:AdminTransactComponent}
+
 ];
 
 @NgModule({

@@ -14,6 +14,11 @@ import { UserProfileComponent } from './Components/user-profile/user-profile.com
 import { UserChequeBookComponent } from './Components/user-cheque-book/user-cheque-book.component';
 import { UserTransactionsComponent } from './Components/user-transactions/user-transactions.component';
 import { UserTransfersComponent } from './Components/user-transfers/user-transfers.component';
+import { AdminLoginComponent } from './Components/admin-login/admin-login.component';
+import { AdminDashboardComponent } from './Components/admin-dashboard/admin-dashboard.component';
+import { AdminAccountManageComponent } from './Components/admin-account-manage/admin-account-manage.component';
+import { AdminChequeComponent } from './Components/admin-cheque/admin-cheque.component';
+import { AdminTransactComponent } from './Components/admin-transact/admin-transact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { UserTransfersComponent } from './Components/user-transfers/user-transfe
     UserProfileComponent,
     UserChequeBookComponent,
     UserTransactionsComponent,
-    UserTransfersComponent
+    UserTransfersComponent,
+    AdminLoginComponent,
+    AdminDashboardComponent,
+    AdminAccountManageComponent,
+    AdminChequeComponent,
+    AdminTransactComponent
   ],
   imports: [
     BrowserModule,

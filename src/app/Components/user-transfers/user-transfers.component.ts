@@ -22,6 +22,7 @@ export class UserTransfersComponent implements OnInit{
   myAccount: Accounts;
   primaryBalance: number = 0;
   savingsBalance: number = 0;
+  isRegistered:number;
 
   constructor(
     private dataService: DataServiceService,
@@ -37,6 +38,7 @@ export class UserTransfersComponent implements OnInit{
           this.selfAccountNumber = this.myAccount.accountNumber;
           this.primaryBalance = this.myAccount.accountBalancePrimary;
           this.savingsBalance = this.myAccount.accountBalanceSavings;
+          this.isRegistered = this.myAccount.accountIsNetBankingReg;
         },
         error => console.log(error)
       )
@@ -91,6 +93,10 @@ export class UserTransfersComponent implements OnInit{
 
     if (this.selfAccountType === 'Savings' && this.myAccount.accountBalanceSavings < this.tranferAmount) {
       alert(`You only have Rs. ${this.myAccount.accountBalanceSavings} in your savings account\nYou need Rs. ${Math.round(this.tranferAmount - this.myAccount.accountBalanceSavings)} more to transfer!`);
+      return;
+    }
+    if(this.myAccount.accountIsNetBankingReg == 0){
+      alert('You need access to perform transfers. Please contact your bank administrator');
       return;
     }
 

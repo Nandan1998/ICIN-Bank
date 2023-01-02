@@ -19,6 +19,8 @@ import { AdminDashboardComponent } from './Components/admin-dashboard/admin-dash
 import { AdminAccountManageComponent } from './Components/admin-account-manage/admin-account-manage.component';
 import { AdminChequeComponent } from './Components/admin-cheque/admin-cheque.component';
 import { AdminTransactComponent } from './Components/admin-transact/admin-transact.component';
+import { AdminThreatComponent } from './Components/admin-threat/admin-threat.component';
+import { UserAccountCreationComponent } from './Components/user-account-creation/user-account-creation.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { AdminTransactComponent } from './Components/admin-transact/admin-transa
     AdminDashboardComponent,
     AdminAccountManageComponent,
     AdminChequeComponent,
-    AdminTransactComponent
+    AdminTransactComponent,
+    AdminThreatComponent,
+    UserAccountCreationComponent
   ],
   imports: [
     BrowserModule,

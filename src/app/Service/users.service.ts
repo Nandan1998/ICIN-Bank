@@ -14,6 +14,10 @@ export class UsersService {
 
   constructor(private http: HttpClient) { }
 
+  getAllUsers():Observable<Array<Users>>{
+      return this.http.get<Array<Users>>(`${this.baseURL}/users`); 
+    }
+
   putUser(user: Users) : Observable<Message> {
     let targetURL = '/users/addUser'
     return this.http.post<Message>(this.baseURL+targetURL, user);

@@ -1,3 +1,5 @@
+import { UserAccountCreationComponent } from './Components/user-account-creation/user-account-creation.component';
+import { AdminThreatComponent } from './Components/admin-threat/admin-threat.component';
 import { AdminTransactComponent } from './Components/admin-transact/admin-transact.component';
 import { AdminChequeComponent } from './Components/admin-cheque/admin-cheque.component';
 import { AdminAccountManageComponent } from './Components/admin-account-manage/admin-account-manage.component';
@@ -17,6 +19,7 @@ import { UserProfileComponent } from './Components/user-profile/user-profile.com
 const routes: Routes = [
   {path:'', component:UserLoginComponent},
   {path:'registration', component:UserRegistrationComponent},
+  {path:'user-account-create', component:UserAccountCreationComponent},
   {path:'user-dashboard', component:UserDashboardComponent},
   {path:'user-accounts', component:UserAccountsComponent},
   {path:'user-profile', component:UserProfileComponent},
@@ -27,7 +30,9 @@ const routes: Routes = [
   {path:'admin-dashboard',component:AdminDashboardComponent},
   {path:'admin-manage-accounts',component:AdminAccountManageComponent},
   {path:'admin-cheque',component:AdminChequeComponent},
-  {path:'admin-transact', component:AdminTransactComponent}
+  {path:'admin-transact', component:AdminTransactComponent},
+  {path:'admin-threat', component:AdminThreatComponent},
+  
 
 ];
 

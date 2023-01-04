@@ -1,3 +1,4 @@
+import { AdminNetbankAccessComponent } from './Components/admin-netbank-access/admin-netbank-access.component';
 import { UserAccountCreationComponent } from './Components/user-account-creation/user-account-creation.component';
 import { AdminThreatComponent } from './Components/admin-threat/admin-threat.component';
 import { AdminTransactComponent } from './Components/admin-transact/admin-transact.component';
@@ -32,8 +33,7 @@ const routes: Routes = [
   {path:'admin-cheque',component:AdminChequeComponent},
   {path:'admin-transact', component:AdminTransactComponent},
   {path:'admin-threat', component:AdminThreatComponent},
-  
-
+  {path:'admin-netbank-access', component:AdminNetbankAccessComponent},
 ];
 
 @NgModule({

@@ -21,6 +21,7 @@ import { AdminChequeComponent } from './Components/admin-cheque/admin-cheque.com
 import { AdminTransactComponent } from './Components/admin-transact/admin-transact.component';
 import { AdminThreatComponent } from './Components/admin-threat/admin-threat.component';
 import { UserAccountCreationComponent } from './Components/user-account-creation/user-account-creation.component';
+import { AdminNetbankAccessComponent } from './Components/admin-netbank-access/admin-netbank-access.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UserAccountCreationComponent } from './Components/user-account-creation
     AdminChequeComponent,
     AdminTransactComponent,
     AdminThreatComponent,
-    UserAccountCreationComponent
+    UserAccountCreationComponent,
+    AdminNetbankAccessComponent
   ],
   imports: [
     BrowserModule,

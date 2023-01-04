@@ -17,10 +17,17 @@ export class AccountServiceService {
   getAccountByNumber(accountNumber: string) : Observable<Accounts> {
     return this.http.get<Accounts>(`${this.baseURL}/accounts/${accountNumber}`)
   }
-  getAllAccounts():Observable<Array<Users>>{
-    return this.http.get<Array<Users>>(`${this.baseURL}/accounts`); 
+  getAllAccounts():Observable<Array<Accounts>>{
+    return this.http.get<Array<Accounts>>(`${this.baseURL}/accounts`); 
   }
   createAccount(account:Accounts): Observable<Message>{
     return this.http.post<Message>(`${this.baseURL}/accounts/add-account`,account);
   }
+  enableNetBanking(status:Number, accountNumber:String): Observable<Message>{
+    return this.http.get<Message>(`${this.baseURL}/accounts/netbankingenable/${status}/${accountNumber}`);
+  }
+  getAllUnregisteredUsers(status:number):Observable<Array<Accounts>>{
+    return this.http.get<Array<Accounts>>(`${this.baseURL}/accounts/unregisteredUsers`);
+  }
+
 }

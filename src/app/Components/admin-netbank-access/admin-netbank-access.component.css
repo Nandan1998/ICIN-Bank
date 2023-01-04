@@ -1,4 +1,4 @@
-#cheque {
+#accounts {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -6,17 +6,17 @@
     margin-right: auto;
   }
   
-  #cheque td, #cheque th {
+  #accounts td, #accounts th {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
   }
   
-  #cheque tr:nth-child(even){background-color: #f2f2f2;}
+  #accounts tr:nth-child(even){background-color: #f2f2f2;}
   
-  #cheque tr:hover {background-color: #ddd;}
+  #accounts tr:hover {background-color: #ddd;}
   
-  #cheque th {
+  #accounts th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;

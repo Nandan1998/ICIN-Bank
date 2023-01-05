@@ -1,3 +1,5 @@
+import { UserWithdrawalComponent } from './Components/user-withdrawal/user-withdrawal.component';
+import { UserDepositComponent } from './Components/user-deposit/user-deposit.component';
 import { AdminNetbankAccessComponent } from './Components/admin-netbank-access/admin-netbank-access.component';
 import { UserAccountCreationComponent } from './Components/user-account-creation/user-account-creation.component';
 import { AdminThreatComponent } from './Components/admin-threat/admin-threat.component';
@@ -27,6 +29,8 @@ const routes: Routes = [
   {path:'user-cheque', component:UserChequeBookComponent},
   {path:'user-passbook', component:UserTransactionsComponent},
   {path:'user-transfer',component:UserTransfersComponent},
+  {path:'user-deposit',component:UserDepositComponent},
+  {path:'user-withdraw',component:UserWithdrawalComponent},
   {path:'admin',component:AdminLoginComponent},
   {path:'admin-dashboard',component:AdminDashboardComponent},
   {path:'admin-manage-accounts',component:AdminAccountManageComponent},

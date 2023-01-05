@@ -29,5 +29,17 @@ export class AccountServiceService {
   getAllUnregisteredUsers(status:number):Observable<Array<Accounts>>{
     return this.http.get<Array<Accounts>>(`${this.baseURL}/accounts/unregisteredUsers`);
   }
+  depositPrimary(balance:number, accountNumber:String): Observable<Message>{
+    return this.http.get<Message>(`${this.baseURL}/accounts/depositPrimary/${balance}/${accountNumber}`)
+  }
+  depositSavings(balance:number, accountNumber:String): Observable<Message>{
+    return this.http.get<Message>(`${this.baseURL}/accounts/depositSavings/${balance}/${accountNumber}`)
+  }
+  withdrawPrimary(balance:number, accountNumber:String): Observable<Message>{
+    return this.http.get<Message>(`${this.baseURL}/accounts/withdrawPrimary/${balance}/${accountNumber}`)
+  }
+  withdrawSavings(balance:number, accountNumber:String): Observable<Message>{
+    return this.http.get<Message>(`${this.baseURL}/accounts/withdrawSavings/${balance}/${accountNumber}`)
+  }
 
 }

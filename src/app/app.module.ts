@@ -22,6 +22,8 @@ import { AdminTransactComponent } from './Components/admin-transact/admin-transa
 import { AdminThreatComponent } from './Components/admin-threat/admin-threat.component';
 import { UserAccountCreationComponent } from './Components/user-account-creation/user-account-creation.component';
 import { AdminNetbankAccessComponent } from './Components/admin-netbank-access/admin-netbank-access.component';
+import { UserDepositComponent } from './Components/user-deposit/user-deposit.component';
+import { UserWithdrawalComponent } from './Components/user-withdrawal/user-withdrawal.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { AdminNetbankAccessComponent } from './Components/admin-netbank-access/a
     AdminTransactComponent,
     AdminThreatComponent,
     UserAccountCreationComponent,
-    AdminNetbankAccessComponent
+    AdminNetbankAccessComponent,
+    UserDepositComponent,
+    UserWithdrawalComponent
   ],
   imports: [
     BrowserModule,
